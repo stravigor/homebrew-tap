@@ -1,9 +1,10 @@
 class Cslug < Formula
   desc "Compiler for the CSlug programming language"
   homepage "https://github.com/stravigor/cslug"
-  url "https://github.com/stravigor/cslug/archive/refs/tags/v0.1.0.tar.gz",
-      using: GitHubPrivateRepositoryDownloadStrategy
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  url "https://github.com/stravigor/cslug.git",
+      using:    :git,
+      tag:      "v0.1.0",
+      revision: "8721bbb301445154b75cd3720b1885074c8df2de"
   license "MIT"
 
   depends_on "cmake" => :build
